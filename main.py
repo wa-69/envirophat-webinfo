@@ -45,7 +45,7 @@ def leds(state):
     envirophat.leds.off()
     return jsonify(result=False)
 
-@app.route('/')
+@app.route('/environ')
 def home():
    return render_template('index.html')
 
